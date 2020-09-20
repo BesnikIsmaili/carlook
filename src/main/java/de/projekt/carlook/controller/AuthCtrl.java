@@ -43,7 +43,7 @@ public class AuthCtrl {
     public static void logout() {
         VaadinSession.getCurrent().setAttribute(Attributes.USER, null);
         UI.getCurrent().close();
-        UI.getCurrent().getPage().setLocation("/carlooksystem_war");
+        UI.getCurrent().getPage().setLocation("/carlook_war");
 
     }
 }
