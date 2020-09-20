@@ -66,7 +66,12 @@ public class MainView extends VerticalLayout implements View {
                 setReservationView();
             }
         });
-        menuBar.addItem("Contact", null);
+        menuBar.addItem("Contact", new MenuBar.Command() {
+            @Override
+            public void menuSelected(MenuBar.MenuItem menuItem) {
+                setContactView();
+            }
+        });
 
         MenuBar setting = new MenuBar();
         setting.addStyleName("setting");
@@ -95,6 +100,11 @@ public class MainView extends VerticalLayout implements View {
     private void setReservationView() {
         content.removeAllComponents();
         content.addComponent(new ReservationView());
+    }
+
+    private void setContactView() {
+        content.removeAllComponents();
+        content.addComponent(new ContactView());
     }
 
 }

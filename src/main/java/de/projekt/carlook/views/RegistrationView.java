@@ -104,6 +104,7 @@ public class RegistrationView extends VerticalLayout implements View, Button.Cli
         }else {
             try {
                 AuthCtrl.register(regEmail, regPassword, regFirstname, regLastname);
+                Notification.show("Registration success!", Notification.Type.HUMANIZED_MESSAGE);
                 UI.getCurrent().getNavigator().navigateTo(Views.LOGIN);
             } catch (UserAlreadyExistsException e) {
                 Notification.show(e.getMessage(), Notification.Type.ERROR_MESSAGE);

@@ -12,4 +12,10 @@ public class CarCtrl {
     public static Car getCarById(int id) {
         return carService.read(id);
     }
+
+    public static List<Car> getAllCars(){ return carService.readAll(); }
+
+    public static List<Car> search(String filter) {
+        return carService.filter(filter);
+    }
 }

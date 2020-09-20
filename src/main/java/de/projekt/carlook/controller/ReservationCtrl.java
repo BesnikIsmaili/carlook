@@ -15,7 +15,7 @@ public class ReservationCtrl {
     private static ReservationService reservationService = new ReservationService();
 
 
-    public static boolean create(String email, int car_id) {
+    public static boolean reserve(String email, int car_id) {
         Reservation reservation = new Reservation();
         reservation.setEmail(email);
         reservation.setCar_id(car_id);
@@ -24,10 +24,14 @@ public class ReservationCtrl {
     }
 
     public static List<ReservedCar> getAllReservationOfUser() {
-       // return new ArrayList<>();
+        //return new ArrayList<>();
 
         User user = (User) VaadinSession.getCurrent().getAttribute(Attributes.USER);
         return reservationService.readByUser(user.getEmail());
 
+    }
+
+    public static boolean delete(int id) {
+        return reservationService.delete(id);
     }
 }
