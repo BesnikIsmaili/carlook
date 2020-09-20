@@ -35,4 +35,128 @@
   @include valo;
 
   // Insert your own theme rules here
+  .login-container, .registration-container {
+    background-image: url(https://c-mobile-project.eu/wp-content/uploads/sites/19/2016/09/home-2-iStock_000037651044Large.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    min-height: 1000px;
+  }
+
+  .header {
+    background-image: url(https://thumbs.dreamstime.com/b/urban-landscape-street-road-cars-city-nature-background-flat-vector-cartoon-style-illustration-buildings-family-houses-88644887.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    height: 200px !important;
+    /* opacity: 0.7; */
+    font-size: xx-large;
+  }
+
+  .form {
+    max-width: 50%;
+    padding: 5%;
+    border: solid 1px orange;
+    border-radius: 5%;
+    box-shadow: 5px 10px orange;
+    font-weight: bold;
+    color: black;
+  }
+
+  .login, .signup {
+    width: 100%;
+    margin-top: 10%;
+    background: orange;
+    border: solid orange;
+    font-weight: bold;
+  }
+
+  .logo:first-letter {
+    font-size: 36pt;
+    font-weight: bold;
+    color: darkorange;
+    font-style: italic;
+  }
+
+  .header-logo:first-letter {
+    font-size: 72pt;
+    font-weight: bold;
+    color: darkorange;
+    font-style: italic;
+  }
+
+  .logo, .header-logo {
+    font-weight: bold;
+    color: orange;
+  }
+
+  .menu-container {
+    background: black;
+  }
+
+  .v-menubar-menuitem{
+    font-weight: bold !important;
+    width: 200px!important;
+  }
+
+  .search {
+    border-radius: unset;
+    background: orange;
+    border: solid 3px orange;
+    width: 100px;
+  }
+
+  .searchbar {
+    border-radius: unset;
+    width: 600px;
+  }
+
+  .brand {
+    font-weight: bold;
+  }
+
+  .card-btn-ly {
+    margin-left: 30%;
+  }
+
+  .detail {
+    background: lightyellow;
+    border: solid 2px lightyellow;
+    font-weight: bold;
+  }
+
+  .reserve {
+    background: orange;
+    border: solid 2px orange;
+    font-weight: bold;
+  }
+
+  .header-menu-bar {
+    margin-left: 65%;
+  }
+
+  .setting {
+    background: lightgoldenrodyellow;
+  }
+
+  .close {
+    background: orangered;
+    border: solid 2px orangered;
+    color: white;
+    font-weight: bold;
+  }
+
+  .cancel {
+    background: orangered;
+    border: solid 2px orangered;
+    color: white;
+    font-weight: bold;
+  }
+
+  .contact {
+    text-align: center;
+    border-radius: 1rem;
+    border: solid 1px orange;
+    /* background: #ffb300; */
+    box-shadow: 5px 5px 5px 5px orange;
+  }
 }
