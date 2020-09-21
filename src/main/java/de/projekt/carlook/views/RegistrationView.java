@@ -68,7 +68,7 @@ public class RegistrationView extends VerticalLayout implements View, Button.Cli
         signUp.addStyleName("signup");
         signUp.addClickListener(this);
 
-        Label signIn = new Label("<span>You have already account? <a href=\"http://localhost:8080/carlooksystem_war/#!login\">Sign In</a></span>", ContentMode.HTML);
+        Label signIn = new Label("<span>You have already account? <a href=\"http://localhost:8080/carlook_war/#!login\">Sign In</a></span>", ContentMode.HTML);
 
         form.addComponent(firstname);
         form.addComponent(lastname);

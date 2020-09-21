@@ -65,7 +65,7 @@ public class LoginView extends VerticalLayout implements View, Button.ClickListe
         login.addStyleName("login");
         login.addClickListener(this);
 
-        Label register = new Label("<span>New user? <a href=\"http://localhost:8080/carlooksystem_war/#!registration\">Create an account</a></span>", ContentMode.HTML);
+        Label register = new Label("<span>New user? <a href=\"http://localhost:8080/carlook_war/#!registration\">Create an account</a></span>", ContentMode.HTML);
 
         form.addComponent(email);
         form.addComponent(password);
